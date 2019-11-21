@@ -42,7 +42,7 @@ return [
         'cart' => ['class' => 'panix\mod\cart\Module'],
         'sitemap' => ['class' => 'panix\mod\sitemap\Module'],
         'banner' => ['class' => 'panix\mod\banner\Module'],
-        'sendpulse' => ['class' => 'panix\mod\sendpulse\Module'],
+       // 'sendpulse' => ['class' => 'panix\mod\sendpulse\Module'],
         'contacts' => ['class' => 'panix\mod\contacts\Module'],
         'seo' => ['class' => 'panix\mod\seo\Module'],
         'discounts' => ['class' => 'panix\mod\discounts\Module'],
