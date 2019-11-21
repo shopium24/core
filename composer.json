@@ -33,7 +33,8 @@
         "panix/mod-shop": "dev-master",
         "panix/mod-compare": "dev-master",
         "panix/mod-banner": "dev-master",
-        "panix/mod-delivery": "dev-master"
+        "panix/mod-delivery": "dev-master",
+        "panix/mod-sendpulse": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2",
