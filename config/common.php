@@ -314,7 +314,7 @@ $config = [
         'languageManager' => ['class' => 'panix\engine\ManagerLanguage'],
         'settings' => ['class' => 'panix\engine\components\Settings'],
         'urlManager' => require(__DIR__ . '/urlManager.php'),
-        'db' => require($db),
+        //'db' => require($db),
     ],
     /*'as access' => [
         'class' => panix\mod\rbac\filters\AccessControl::class,
