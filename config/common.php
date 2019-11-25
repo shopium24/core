@@ -7,7 +7,6 @@ $logDate = $date->format('Y-m-d');
 
 $db = YII_DEBUG ? dirname(__DIR__) . '/config/db_local.php' : dirname(__DIR__) . '/config/db.php';
 $config = [
-    'id' => 'common',
     'name' => 'PIXELION CMS',
     'basePath' => dirname(__DIR__) . '/../',
     'language' => 'ru',
@@ -50,7 +49,7 @@ $config = [
         'compare' => ['class' => 'panix\mod\compare\Module'],
         'shop' => ['class' => 'panix\mod\shop\Module'],
         //'shop' => ['class' => 'app\modules\shop\Module'],
-        //'sitemap' => ['class' => 'panix\mod\sitemap\Module'],
+        'sitemap' => ['class' => 'panix\mod\sitemap\Module'],
         'banner' => ['class' => 'panix\mod\banner\Module'],
        // 'sendpulse' => ['class' => 'panix\mod\sendpulse\Module'],
         'contacts' => ['class' => 'panix\mod\contacts\Module'],
@@ -332,11 +331,11 @@ $config = [
 ];
 if (YII_ENV_DEV) {
     // configuration adjustments for 'dev' environment
-    $config['modules']['debug']['class'] = 'yii\debug\Module';
-    $config['modules']['debug']['traceLine'] = function ($options, $panel) {
-        $filePath = $options['file'];
-        return strtr('<a href="phpstorm://open?url={file}&line={line}">{file}:{line}</a>', ['{file}' => $filePath]);
-    };
+    //$config['modules']['debug']['class'] = 'yii\debug\Module';
+    //$config['modules']['debug']['traceLine'] = function ($options, $panel) {
+    //    $filePath = $options['file'];
+    //    return strtr('<a href="phpstorm://open?url={file}&line={line}">{file}:{line}</a>', ['{file}' => $filePath]);
+   // };
     //$config['modules']['debug']['dataPath'] = '@common/runtime/debug';
 }
 
