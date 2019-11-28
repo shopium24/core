@@ -158,7 +158,8 @@ $config = [
         ],
         'assetManager' => [
             'forceCopy' => YII_DEBUG,
-            // 'basePath'=>'@webroot/web/assets',
+            //'baseUrl'=>'http://core/assets',
+            //'basePath'=>dirname(__DIR__) . '/assets',
             'bundles' => [
                 //'yii\jui\JuiAsset' => ['css' => []],
                 'yii\jui\JuiAsset' => [
@@ -172,7 +173,6 @@ $config = [
                     ]
                 ]*/
             ],
-            //'linkAssets' => true,
             'appendTimestamp' => true
         ],
         'plugins' => [
