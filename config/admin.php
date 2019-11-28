@@ -3,10 +3,10 @@
 $config = [
     'id' => 'admin',
     'basePath' => dirname(__DIR__),
-    'components'=>[
+    'components' => [
         'assetManager' => [
-            'baseUrl'=>'http://core/assets',
-            'basePath'=>dirname(__DIR__) . '/assets',
+            'baseUrl' => 'http://core/assets',
+            'basePath' => dirname(__DIR__) . '/web/assets',
         ],
     ],
     'params' => require(__DIR__ . '/../config/params.php'),

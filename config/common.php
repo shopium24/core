@@ -313,7 +313,18 @@ $config = [
         'languageManager' => ['class' => 'panix\engine\ManagerLanguage'],
         'settings' => ['class' => 'panix\engine\components\Settings'],
         'urlManager' => require(__DIR__ . '/urlManager.php'),
-        //'db' => require($db),
+        'db' => [
+            'class' => 'panix\engine\db\Connection',
+            'charset' => 'utf8mb4', //utf8 на utf8mb4. FOR Emoji
+            'serverStatusCache' => YII_DEBUG ? 0 : 3600,
+            'schemaCacheDuration' => YII_DEBUG ? 0 : 3600 * 24,
+            'enableSchemaCache' => true,
+            'schemaCache' => 'cache'
+            //'on afterOpen' => function($event) {
+            //$event->sender->createCommand("SET time_zone = '" . date('P') . "'")->execute();
+            //$event->sender->createCommand("SET names utf8")->execute();
+            //},
+        ],
     ],
     /*'as access' => [
         'class' => panix\mod\rbac\filters\AccessControl::class,
