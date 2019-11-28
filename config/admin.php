@@ -6,7 +6,7 @@ $config = [
     'components' => [
         'assetManager' => [
             'baseUrl' => 'http://core/assets',
-            'basePath' => dirname(__DIR__) . '/web/assets',
+            'basePath' => dirname(__DIR__) . '/assets',
         ],
     ],
     'params' => require(__DIR__ . '/../config/params.php'),
