@@ -1,6 +1,5 @@
 AddDefaultCharset UTF-8
 
-
-RewriteEngine on
-
-RewriteRule . index.php
+RewriteEngine On
+RewriteRule ^images/language/(.*)$ images/language/$1 [L]
+RewriteRule ^.*$ index.php
