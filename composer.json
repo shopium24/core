@@ -1,13 +1,13 @@
 {
-    "name": "shopium24/core",
-    "description": "Core application",
+    "name": "shopium24/common",
+    "description": "Common application",
     "keywords": [],
     "homepage": "https://shopium24.com/",
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/shopium24/core/issues?state=open",
-        "source": "https://github.com/shopium24/core"
+        "issues": "https://github.com/shopium24/common/issues?state=open",
+        "source": "https://github.com/shopium24/common"
     },
     "minimum-stability": "dev",
     "require": {
@@ -20,14 +20,12 @@
         "yiisoft/yii2-debug": "~2",
         "panix/engine": "dev-master",
         "panix/mod-stats": "dev-master",
-        "panix/mod-forum": "dev-master",
         "panix/mod-plugins": "dev-master",
         "panix/mod-rbac": "dev-master",
         "panix/mod-seo": "dev-master",
         "panix/mod-admin": "dev-master",
         "panix/mod-sitemap": "dev-master",
         "panix/mod-pages": "dev-master",
-        "panix/mod-docs": "dev-master",
         "panix/mod-contacts": "dev-master",
         "panix/mod-user": "dev-master",
         "panix/mod-shop": "dev-master",
